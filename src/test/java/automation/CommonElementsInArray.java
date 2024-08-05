@@ -24,6 +24,8 @@ public class CommonElementsInArray {
 		
 		System.out.println(set1);
 		
+		System.out.println(set1);
+		
  
 	}
 
