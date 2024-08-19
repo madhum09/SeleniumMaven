@@ -3,24 +3,20 @@ package automation;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * anagram
- */
 public class Anagram {
 
-    public static boolean isAnagram(String str1, String str2) 
+    public static boolean isAnagram(String st1, String st2) 
     {
-    // Remove whitespace and punctuation, and convert to lowercase
-    str1 = str1.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
-    str2 = str2.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+   
+    st1 = st1.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+    st2 = st2.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
     
-    // Sort the characters in each string
-    char[] arr1 = str1.toCharArray();
-    char[] arr2 = str2.toCharArray();
+    
+    char[] arr1 = st1.toCharArray();
+    char[] arr2 = st2.toCharArray();
     Arrays.sort(arr1);
     Arrays.sort(arr2);
-    
-    // Compare the sorted strings
+ 
     return Arrays.equals(arr1, arr2);
 }
 
@@ -28,7 +24,7 @@ public static void main(String[] args) {
 
     Scanner sc = new Scanner(System.in);
     while (true) {
-        System.out.println("Enter two strings: str1 str2");
+        System.out.println("enter the strings: st1 st2");
         String anag = sc.nextLine();
         if (anag.equals("."))
         break ;
