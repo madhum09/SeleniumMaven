@@ -10,8 +10,12 @@ import org.junit.jupiter.api.Test;
 		 * public static void main(String[] args) { RestAssured.baseURI =
 		 * "https://jsonplaceholder.typicode.com";
 		 * 
-		 * given() .when() .get("/posts/1") .then() .statusCode(200) .body("userId",
-		 * equalTo(1)) .body("id", equalTo(1)) .body("title", notNullValue()); }
+		 * given() .when() .get("/posts/1")
+		 * .then() 
+		 * .statusCode(200)
+		 * .body("userId",equalTo(1))
+		 * .body("id", equalTo(1)) 
+		 * .body("title", notNullValue()); }
 		 */
 
 		    @Test
