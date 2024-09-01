@@ -1,8 +1,13 @@
 package restAPI;
-import io.restassured.RestAssured;
+//import io.restassured.RestAssured;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
 
 	public class ApiTest {
 
